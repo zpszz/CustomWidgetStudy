@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "CustomWidgetStudy"
 include(":app")
-include(":chapter1")
+include(":chapter2")
+include(":chapter3")
