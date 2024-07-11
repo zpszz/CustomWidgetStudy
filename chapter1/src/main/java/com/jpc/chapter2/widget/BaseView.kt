@@ -1,6 +1,5 @@
-package com.jpc.chapter1.widget
+package com.jpc.chapter2.widget
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color

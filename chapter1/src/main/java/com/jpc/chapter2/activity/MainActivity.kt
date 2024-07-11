@@ -1,11 +1,11 @@
-package com.jpc.chapter1.activity
+package com.jpc.chapter2.activity
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.jpc.chapter1.R
+import com.jpc.chapter2.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.jpc.chapter1.activity
+package com.jpc.chapter2.activity
 
 import android.os.Bundle
 import android.view.animation.Animation
@@ -8,9 +8,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.jpc.chapter1.R
-import com.jpc.chapter1.databinding.ActivityCameraStretchBinding
-import com.jpc.chapter1.databinding.ActivityScaleAnimBinding
+import com.jpc.chapter2.R
+import com.jpc.chapter2.databinding.ActivityCameraStretchBinding
 
 class CameraStretchActivity : AppCompatActivity() {
     private val binding: ActivityCameraStretchBinding by lazy { ActivityCameraStretchBinding.inflate(layoutInflater) }

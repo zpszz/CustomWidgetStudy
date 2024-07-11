@@ -9,6 +9,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CustomWidgetStudy">
         <activity
+            android:name=".activity.FrameAnimXML"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ScanAnimActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.CameraStretchActivity"
             android:exported="false" />
         <activity

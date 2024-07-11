@@ -1,4 +1,4 @@
-package com.jpc.chapter1.activity
+package com.jpc.chapter2.activity
 
 import android.os.Bundle
 import android.view.animation.AlphaAnimation
@@ -11,8 +11,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.jpc.chapter1.R
-import com.jpc.chapter1.databinding.ActivityScaleAnimBinding
+import com.jpc.chapter2.R
+import com.jpc.chapter2.databinding.ActivityScaleAnimBinding
 
 class ScaleAnimActivity : AppCompatActivity() {
     private val binding: ActivityScaleAnimBinding by lazy { ActivityScaleAnimBinding.inflate(layoutInflater) }

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.jpc.chapter1"
+    namespace = "com.jpc.chapter2"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.jpc.chapter1"
+        applicationId = "com.jpc.chapter2"
         minSdk = 29
         targetSdk = 34
         versionCode = 1

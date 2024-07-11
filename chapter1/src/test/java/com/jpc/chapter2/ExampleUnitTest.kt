@@ -1,4 +1,4 @@
-package com.jpc.chapter1
+package com.jpc.chapter2
 
 import org.junit.Test
 
