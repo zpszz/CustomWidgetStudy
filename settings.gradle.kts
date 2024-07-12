@@ -23,3 +23,5 @@ rootProject.name = "CustomWidgetStudy"
 include(":app")
 include(":chapter2")
 include(":chapter3")
+include(":chapter5")
+include(":chapter12")
