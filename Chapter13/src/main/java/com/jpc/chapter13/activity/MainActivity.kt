@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity(), OnClickListener{
         }
         binding.apply {
             btnTranslateActivity.setOnClickListener(this@MainActivity)
+            btnRotate3dActivity.setOnClickListener(this@MainActivity)
+            btnClockActivity.setOnClickListener(this@MainActivity)
         }
     }
 
@@ -34,6 +36,15 @@ class MainActivity : AppCompatActivity(), OnClickListener{
                     val intent = Intent(this, TranslateActivity::class.java)
                     startActivity(intent)
                 }
+                R.id.btn_rotate3d_activity -> {
+                    val intent = Intent(this, Rotate3DActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.btn_clock_activity -> {
+                    val intent = Intent(this, ClockViewActivity::class.java)
+                    startActivity(intent)
+                }
+
             }
         }
     }
