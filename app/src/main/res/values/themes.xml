@@ -6,4 +6,16 @@
     </style>
 
     <style name="Theme.CustomWidgetStudy" parent="Base.Theme.CustomWidgetStudy" />
+
+    <style name="Theme.AppCompat.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize your dialog theme here -->
+        <item name="android:windowBackground">@color/loading_color</item>
+        <item name="android:windowMinWidthMajor">30%</item>
+        <item name="android:windowMinWidthMinor">30%</item>
+        <item name="android:padding">6dp</item>
+    </style>
+    <!-- Custom ProgressBar style -->
+    <style name="CustomProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint">@color/colorPrimary</item>
+    </style>
 </resources>
