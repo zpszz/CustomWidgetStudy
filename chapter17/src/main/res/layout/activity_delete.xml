@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_delete"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/scroll_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scroll To"/>
+    <Button
+        android:id="@+id/scroll_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scroll By"/>
+    <Button
+        android:id="@+id/scroll_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="复位"/>
+
+    <LinearLayout
+        android:id="@+id/ll_action_root"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ff00"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="删除"
+            android:gravity="start|center_vertical"
+            android:background="#ff0000"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/scroll_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="开始滚动"/>
+    <Button
+        android:id="@+id/scroll_reset2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="复位2"/>
+
+    <com.jpc.chapter17.widget.ScrollerLinearLayout
+        android:id="@+id/sll_action_root"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ff00"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="删除"
+            android:gravity="start|center_vertical"
+            android:background="#ff0000"/>
+    </com.jpc.chapter17.widget.ScrollerLinearLayout>
+</LinearLayout>

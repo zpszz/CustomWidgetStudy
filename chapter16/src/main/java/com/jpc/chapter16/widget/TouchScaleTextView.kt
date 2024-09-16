@@ -4,8 +4,10 @@ import android.content.Context
 import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.MotionEvent
+import android.view.ViewConfiguration
 import androidx.appcompat.widget.AppCompatTextView
 import kotlin.math.abs
+import kotlin.math.sqrt
 
 /**
  * 自定义可缩放的文本视图
@@ -21,7 +23,6 @@ class TouchScaleTextView @JvmOverloads constructor(
     private var mTextSize = 0f
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
-        performClick()
         if (mTextSize == 0f){
             mTextSize = textSize;
         }
@@ -32,6 +33,8 @@ class TouchScaleTextView @JvmOverloads constructor(
             }
             MotionEvent.ACTION_UP ->{
                 mode = 0
+                if (event.eventTime - event.downTime < ViewConfiguration.getTapTimeout())
+                    performClick()
             }
             MotionEvent.ACTION_POINTER_UP -> {
                 mode -= 1
@@ -66,6 +69,6 @@ class TouchScaleTextView @JvmOverloads constructor(
     private fun spacing(event: MotionEvent): Float{
         val x = event.getX(0) - event.getX(1)
         val y = event.getY(0) - event.getY(1)
-        return Math.sqrt((x*x - y*y).toDouble()).toFloat()
+        return sqrt((x*x + y*y).toDouble()).toFloat()
     }
 }
